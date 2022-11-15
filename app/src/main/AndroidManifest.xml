@@ -17,6 +17,13 @@
         android:theme="@style/Theme.TfApp"
         tools:targetApi="31">
         <activity
+            android:name=".ClassifierWithModel"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".InputActivity"
             android:exported="false">
             <meta-data
@@ -46,7 +53,7 @@
 
         <provider
             android:name="androidx.core.content.FileProvider"
-            android:authorities="com.example.myapp.fileprovider"
+            android:authorities="com.example.tfapp.fileprovider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data
